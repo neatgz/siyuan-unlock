@@ -1,9 +1,10 @@
 # siyuan patch 思源笔记本地VIP
 
-Reference:
-https://github.com/demoshang/siyuan-patch
-https://github.com/siyuan-community/siyuan
-https://github.com/EightDoor/siyuan
+Reference:  
+[demoshang/siyuan-patch](https://github.com/demoshang/siyuan-patch)  
+[siyuan-community/siyuan](https://github.com/siyuan-community/siyuan)  
+[EightDoor/siyuan](https://github.com/EightDoor/siyuan)  
+
 
 ## 如何下载 桌面端(Windows / Mac / Linux) 和 Android 应用
 
