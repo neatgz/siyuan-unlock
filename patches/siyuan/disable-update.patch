@@ -1,16 +1,14 @@
-diff --git forkSrcPrefix/kernel/model/updater.go forkDstPrefix/kernel/model/updater.go
-index dd1c3af48360709216f8e4b95beb841836cf00d8..ad6473a1684930f2b17d680dfd827c2fd5497cbb 100644
---- forkSrcPrefix/kernel/model/updater.go
-+++ forkDstPrefix/kernel/model/updater.go
-@@ -306,6 +306,11 @@ func skipNewVerInstallPkg() bool {
+diff --git forkSrcPrefix/kernel/conf/system.go forkDstPrefix/kernel/conf/system.go
+index 6d51b4c..309594d 100644
+--- forkSrcPrefix/kernel/conf/system.go
++++ forkDstPrefix/kernel/conf/system.go
+@@ -52,7 +52,8 @@ func NewSystem() *System {
+ 		Name:               util.GetDeviceName(),
+ 		KernelVersion:      util.Ver,
+ 		NetworkProxy:       &NetworkProxy{},
+-		DownloadInstallPkg: true,
++		DownloadInstallPkg: false,
++		DisableGoogleAnalytics: true,
  	}
- 	if !Conf.System.DownloadInstallPkg {
- 		return true
-+	} else {
-+		// Conf.System.DownloadInstallPkg(自动下载更新安装包) 强制赋值为false
-+		Conf.System.DownloadInstallPkg = false
-+		Conf.Save()
-+		return true
- 	}
- 	if gulu.OS.IsWindows() {
- 		plat := strings.ToLower(Conf.System.OSPlatform)
+ }
+ 
